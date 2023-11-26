@@ -1,0 +1,180 @@
+
+.enroll-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* filter */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 1px 20px;
+    border-radius: 10px;
+}
+
+.filter-container select {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: none;
+
+    color: grey;
+}
+
+@media (max-width: 600px) {
+    .filter-container {
+        padding: 5px;
+    }
+}
+.info-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/*course cards*/
+
+
+
+.CoursesContainer{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5em;
+
+}
+
+.course{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 3px 4px 2px #c5e0e1;
+    height: 22em ;
+    /*min-height: 13em;*/
+    width:15em;
+    overflow: hidden;
+    margin:2em;
+    transition: 0.6s ease;
+
+}
+
+.course:hover{
+    transform: scale(1.075);
+}
+
+.courseImage img{
+    width: 100%;
+    padding-bottom: .5em;
+
+}
+
+.course:hover .courseImage{
+    opacity: 0.88;
+}
+
+.courseAlreadyDisplayed .courseDetailsWhenHover{
+    padding: 4em;
+}
+
+.courseAlreadyDisplayed{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: .5em;
+
+    margin-bottom: 2em;
+
+
+}
+
+
+
+.course:hover{
+    height: 34em;
+}
+
+
+.courseDetailsWhenHover{
+    padding:0 0.8em;
+}
+
+/*
+ .courseAlreadyDisplayed:hover + .courseDetailsWhenHover{
+   display: block;
+
+ }*/
+
+
+.courseDetailsWhenHover ul{
+    list-style-position: outside;
+    padding-left: 1.5em;
+}
+
+
+
+
+
+
+/*style the rating*/
+.checked {
+    color: orange;
+}
+
+ .action {
+    margin-bottom: 1.5em;
+    display:flex;
+    justify-content: center;
+
+
+}
+
+ .action input{
+    background: transparent;
+    border-radius: 10px;
+    border: 8px solid rgb(255, 219, 154);
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    height: 44px;
+    letter-spacing: 3px;
+    outline: 0;
+    padding: 0 20px 0 22px;
+    margin-right: 10px;
+
+}
+.action input{
+    background-color: rgb(255, 219, 154);
+    color: rgb(68, 49, 15);
+    transition: box-shadow 0.3s ease-in-out;
+    justify-items: center;
+    display: flex;
+}
+
+#enrollmentInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 2em;
+}
+
+#enrollmentInfo h2,
+#enrollmentInfo p {
+    flex-basis: 100%;
+}
+
+/* Adjust the styles for smaller screens */
+@media (max-width: 600px) {
+    #enrollmentInfo {
+        flex-direction: column;
+    }
+}
